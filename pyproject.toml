@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellcycle"
+version = "0.1.0"
+description = "初中生物细胞分裂教学工具：细胞数、周期时间、各期时长与染色体数目表"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["python", "education", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+cellcycle = "cellcycle.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/cellcycle"
+Source = "https://github.com/eastyou/cellcycle"
+
+[tool.setuptools]
+packages = ["cellcycle"]
